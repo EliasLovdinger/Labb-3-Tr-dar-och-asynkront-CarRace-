@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb 3 – Trådar och asynkront", "Labb 3 – Trådar och asynkront\Labb 3 – Trådar och asynkront.csproj", "{2609CB1B-887F-4CCB-BD9E-7594479A163B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2609CB1B-887F-4CCB-BD9E-7594479A163B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2609CB1B-887F-4CCB-BD9E-7594479A163B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2609CB1B-887F-4CCB-BD9E-7594479A163B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2609CB1B-887F-4CCB-BD9E-7594479A163B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D108C320-7ABB-4359-9044-AC281C90E3D0}
+	EndGlobalSection
+EndGlobal
