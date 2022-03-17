@@ -125,22 +125,22 @@ namespace Labb_3___Trådar_och_asynkront
                     int random = rnd.Next(0, 50);
                     if (random == 1) // 1%
                     {
-                        lock (_sync) { PrintFaults(0, 18, car1, "Slut på bensin!"); }
+                        lock (_sync) { PrintFaults(0, 18, car1, "Slut på bensin!       "); }
                         SleepTime = SleepTime + 3000;
                     }
                     else if (random >= 2 && random <= 3) // 2%
                     {
-                        lock (_sync) { PrintFaults(0, 18, car1, "Punka!"); }
+                        lock (_sync) { PrintFaults(0, 18, car1, "Punka!                "); }
                         SleepTime = SleepTime + 2000;
                     }
                     else if (random >= 4 && random <= 9) // 5%
                     {
-                        lock (_sync) { PrintFaults(0, 18, car1, "Fågel!"); }
+                        lock (_sync) { PrintFaults(0, 18, car1, "Fågel!                "); }
                         SleepTime = SleepTime + 1000;
                     }
                     else if (random >= 10 && random <= 20)
                     {
-                        lock (_sync) { PrintFaults(0, 18, car1, "Motorfel!"); }
+                        lock (_sync) { PrintFaults(0, 18, car1, "Motorfel!             "); }
                         car1.FSpeed = car1.FSpeed -1;
                     }
                     else
@@ -152,7 +152,6 @@ namespace Labb_3___Trådar_och_asynkront
                 Thread.Sleep(100);
                 Thread.Sleep(SleepTime);
                 car1.Speed = car1.Speed + EngineDur;
-                lock (_sync) {PrintFaults(0, 18, car1, "                          "); }
                 lock (_sync) { PrintCarAt(distance1, 20, car1); }
         }
     
@@ -180,23 +179,23 @@ namespace Labb_3___Trådar_och_asynkront
                     int random = rnd.Next(0, 50);
                     if (random == 1) // 1%
                     {
-                        lock (_sync) { PrintFaults(0, 26, car2, "Slut på bensin!"); }
+                        lock (_sync) { PrintFaults(0, 26, car2, "Slut på bensin!       "); }
                         SleepTime = SleepTime + 3000;
                     }
                     else if (random >= 2 && random <= 3) // 2%
                     {
-                        lock (_sync) { PrintFaults(0, 26, car2, "Punka!"); }
+                        lock (_sync) { PrintFaults(0, 26, car2, "Punka!                "); }
                         SleepTime = SleepTime + 2000;
                     }
                     else if (random >= 4 && random <= 9) // 5%
                     {
-                        lock (_sync) { PrintFaults(0, 26, car2, "Fågel!"); }
+                        lock (_sync) { PrintFaults(0, 26, car2, "Fågel!                "); }
 
                         SleepTime = SleepTime + 1000;
                     }
                     else if (random >= 10 && random <= 20)
                     {
-                        lock (_sync) { PrintFaults(0, 26, car2, "Motorfel!"); }
+                        lock (_sync) { PrintFaults(0, 26, car2, "Motorfel!             "); }
                         car2.FSpeed = car2.FSpeed -1;
                     }
                     else
@@ -208,7 +207,6 @@ namespace Labb_3___Trådar_och_asynkront
                 Thread.Sleep(100);
                 Thread.Sleep(SleepTime);
                 car2.Speed = car2.Speed + EngineDur;
-                lock (_sync) { PrintFaults(0, 26, car2, "                          "); }
                 lock (_sync) { PrintCarAt(distance2, 28, car2); }
         }
         public static bool Event(Car car, int position)
@@ -217,22 +215,22 @@ namespace Labb_3___Trådar_och_asynkront
             int random = rnd.Next(0, 20);
             if (random == 1) // 1%
             {
-                lock (_sync) { PrintFaults(0, position, car, "Slut på bensin!"); }
+                lock (_sync) { PrintFaults(0, position, car, "Slut på bensin!       "); }
                 Thread.Sleep(3000);
             }
             else if (random >= 2 && random <= 3) // 2%
             {
-                lock (_sync) { PrintFaults(0, position, car, "Punka!"); }
+                lock (_sync) { PrintFaults(0, position, car, "Punka!                "); }
                 Thread.Sleep(2000);
             }
             else if (random >= 4 && random <= 9) // 5%
             {
-                lock (_sync) { PrintFaults(0, position, car, "Fågel!"); }
+                lock (_sync) { PrintFaults(0, position, car, "Fågel!                "); }
                 Thread.Sleep(1000);
             }
             else if (random >= 10 && random <= 20)
             {
-                lock (_sync) { PrintFaults(0, position, car, "Motorfel!"); }
+                lock (_sync) { PrintFaults(0, position, car, "Motorfel!             "); }
                 return true;
             }
             return false;
